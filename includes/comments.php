@@ -27,6 +27,5 @@
             <input type="submit" class="btn" value="Commenter">
         </form>
 
-        <!-- Message pour confirmer l'envoi du commentaire -->
-        <p class="success"><?php echo htmlspecialchars($message); ?></p>
+
     </div>

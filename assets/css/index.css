@@ -23,9 +23,22 @@ main {
 
 .articles {
   flex: 9;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.list-articles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   gap: 4rem;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .article {
@@ -73,7 +86,8 @@ main {
 .number-btn {
   width: 31px;
   height: 29px;
-  padding: 0;
+
+  text-decoration: none;
 }
 
 /* SIDEBAR */

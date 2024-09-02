@@ -1,12 +1,3 @@
-<?php
-
-include "includes/connexion.php";
-$article = new Article($db);
-$stmt = $article->getAllArticles();
-$articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -31,12 +22,11 @@ $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
 include_once('includes/header.php');
 ?>
 
+
 <!-- HERO and ARTICLES -->
 <?php
 include_once('includes/articles.php');
 ?>
-
-
 
 <!-- SIDEBAR -->
 <?php
@@ -44,6 +34,12 @@ include_once('includes/sidebar.php');
 ?>
 
 </main>
+
+
+
+
+
+
 
 <?php
 include_once("includes/footer.php")

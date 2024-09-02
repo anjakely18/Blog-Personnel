@@ -4,19 +4,10 @@
 
 <main>
     <div class="articles">
-        <?php foreach ($articles as $article): ?>
-            <div class="article">
-                <img src=<?php echo $article["image"] ?> alt="image" />
-                <a href="<?php echo htmlspecialchars('single.php?id=' . $article['id']) ?>">
-                    <h4><?php echo $article["title"] ?></h4>
-                </a>
-                <i><?php echo $article["category"] ?></i>
-                <p><?php echo $article["formatted_date"] ?></p>
-            </div>
-        <?php endforeach; ?>
-
-        <div class="navigation">
-            <button class="btn number-btn">1</button>
-            <button class="btn number-btn">2</button>
+        <div id="articles" class="list-articles">
+            <!-- Les articles seront chargés ici via JavaScript -->
+        </div>
+        <div id="pagination" class="pagination">
+            <!-- La pagination sera chargée ici via JavaScript -->
         </div>
     </div>

@@ -44,11 +44,6 @@ body {
   background-color: var(--text-color);
 }
 
-.success {
-  font-size: large;
-  color: #329bb2;
-}
-
 /*----------------HEADER-----------------*/
 header {
   background-color: var(--bg-color2);
