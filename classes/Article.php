@@ -32,7 +32,7 @@ class Article
     // Méthode pour récupérer un seul article
     public function getSingleArticle($id)
     {
-        $query = "SELECT id, content, title, image, category, DATE_FORMAT(created_at, '%d - %m - %Y') AS formatted_date FROM " . $this->table_name . " WHERE id= :id LIMIT 1";
+        $query = "SELECT id, content, title, image, category, DATE_FORMAT(created_at, '%d - %m - %Y') AS formatted_date FROM posts WHERE id= :id LIMIT 1";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":id", $id, PDO::PARAM_INT);
         $stmt->execute();
