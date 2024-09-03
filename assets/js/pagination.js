@@ -1,3 +1,5 @@
+//AFFICHAGE DES ARTICLES DANS L'ACCUEIL ET PAGINATION
+
 document.addEventListener("DOMContentLoaded", () => {
   const articlesContainer = document.querySelector(".list-articles");
   const pagination = document.querySelector(".pagination");
