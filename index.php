@@ -36,11 +36,12 @@ include_once('includes/sidebar.php');
 </main>
 
 
-
-
-
-
-
 <?php
 include_once("includes/footer.php")
 ?>
+
+
+<script src="assets/js/pagination.js"></script>
+</body>
+
+</html>

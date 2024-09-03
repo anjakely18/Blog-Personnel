@@ -7,9 +7,3 @@
     </div>
     <p>&copy; 2024 Visionnaire Life. Tous droits réservés.</p>
 </footer>
-
-<script src="assets/js/pagination.js"></script>
-<script src="assets/js/single.js"></script>
-</body>
-
-</html>

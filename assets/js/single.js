@@ -1,5 +1,3 @@
-//Affichage d'un article à l'aide d'ajax
-
 document.addEventListener("DOMContentLoaded", () => {
   const singleArticle = document.querySelector(".single-article");
 
@@ -12,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (data.error) {
         `<p>${data.error}</p>`;
       } else {
+        document.title = data.title;
         //aficher l'article
         singleArticle.innerHTML = `
             <div class="img-container">
