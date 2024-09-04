@@ -28,6 +28,52 @@ class Article
         return $stmt->fetchColumn();
     }
 
+    public function countArticlesByCategories($category)
+    {
+        $sql = "SELECT COUNT(*) FROM posts WHERE category= :category";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindValue(':category', $category, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchColumn();
+    }
+
+
+    public function countArticlesBySearch($search)
+    {
+        $sql = "SELECT COUNT(*) FROM posts WHERE title LIKE :search";
+        $stmt = $this->conn->prepare($sql);
+        $stmt->bindValue(':search', '%' . $search . '%', PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchColumn();
+    }
+
+    // Méthode pour récupérer tous les articles
+    public function getAllArticlesByCategory($page, $article_per_page, $category)
+    {
+        $offset = ($page - 1) * $article_per_page;
+        $query = "SELECT id, content, title, image, category, DATE_FORMAT(created_at, '%d - %m - %Y') AS formatted_date FROM posts WHERE category= :category ORDER BY created_at DESC LIMIT :offset, :limit";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+        $stmt->bindValue(':limit', $article_per_page, PDO::PARAM_INT);
+        $stmt->bindValue(':category', $category, PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+
+    // Méthode pour récupérer tous les articles
+    public function getAllArticlesBySearch($page, $article_per_page, $search)
+    {
+        $offset = ($page - 1) * $article_per_page;
+        $query = "SELECT id, content, title, image, category, DATE_FORMAT(created_at, '%d - %m - %Y') AS formatted_date FROM posts WHERE title LIKE :search ORDER BY created_at DESC LIMIT :offset, :limit";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindValue(':offset', $offset, PDO::PARAM_INT);
+        $stmt->bindValue(':limit', $article_per_page, PDO::PARAM_INT);
+        $stmt->bindValue(':search', '%' . $search . "%", PDO::PARAM_STR);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
 
     // Méthode pour récupérer un seul article
     public function getSingleArticle($id)

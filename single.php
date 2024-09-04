@@ -36,7 +36,7 @@
 
 <script src="assets/js/single.js"></script>
 <script src="assets/js/verification.js"></script>
-
+<script src="assets/js/comments.js"></script>
 </body>
 
 </html>

@@ -31,13 +31,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 <div class="comment-section">
     <h2>Les commentaires</h2>
+
+    <!-- AJAX -->
     <div class="list-comments">
-        <div class="comment">
-            <p class="comment-author">Ecrit par: Julie</p>
-            <p>J'adore ce que tu as écrit!</p>
-            <i></i>
-            <div class="separator"></div>
-        </div>
     </div>
 
     <form action="" class="form-comment" id="form-comment" method="post">

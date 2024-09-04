@@ -31,6 +31,7 @@
           </ul>
       </div>
 
+
       <div class="sidebar-component">
           <div class="separator"></div>
           <h3>Réseaux</h3>
@@ -42,4 +43,6 @@
               <a href="#"> <i class="fa-brands fa-square-twitter"></i> </a>
           </div>
       </div>
+  </div>
+
   </div>
