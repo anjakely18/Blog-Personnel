@@ -3,7 +3,7 @@
 .hero-img {
   width: 100%;
   height: 50vh;
-  margin: 3rem;
+  margin-bottom: 3rem;
 }
 
 .hero-img img {
@@ -16,7 +16,6 @@
 .main {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 
 .title {
@@ -162,9 +161,8 @@
 /* RESPONSIVE */
 
 @media (max-width: 1055px) {
-  main {
+  .main-content {
     flex-direction: column;
-    padding: 2rem;
   }
 
   .articles {
