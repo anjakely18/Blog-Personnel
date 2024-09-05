@@ -17,3 +17,11 @@ Pour faire fonctionner ce projet, vous aurez besoin de :
 - **PHP** : Version 7.4 ou supérieure
 - **MySQL** : Base de données pour stocker les articles, les utilisateurs et les commentaires
 - **Serveur Web** : Apache, Nginx, ou un serveur local comme XAMPP
+
+## Contraintes du site
+
+- Le site doit être responsive (s'adapter à la taille des écrans smartphone -> desktop).
+- Vous devrez avoir un formulaire qui utilisera la méthode GET & un formulaire qui utilisera la méthode POST. **TOUS** les formulaire devront avoir une vérification avant envoi avec JS.
+- Vous devrez avoir au moins un appel AJAX sur le site => proposition d'avoir un bouton "Voir plus de projet" sur la page d'accueil.
+- La gestion de la base de donnée devra se faire via des class PHP~~.~~
+- Utilisation de PDO **obligatoire** pour la connexion à la bdd.
