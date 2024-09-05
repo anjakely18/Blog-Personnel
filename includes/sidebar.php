@@ -9,11 +9,7 @@
           <h3>Bienvenue</h3>
           <div class="separator"></div>
           <p>
-              Suspendisse interdum felis eu sollicitudin interdum. Aenean interdum
-              diam purus. Vivamus sapien mi, fermentum vitae ipsum non, sodales
-              pharetra mauris. In facilisis nibh dolor. Aliquam non euismod magna.
-              Phasellus vel augue malesuada, tincidunt erat a, pellentesque enim.
-              Vestibulum condimentum vulputate ultricies.
+              Bienvenue sur mon blog ! Je m’appelle Anja, passionnée par le lifestyle, la mode, la beauté, et tout ce qui fait la vie plus belle au quotidien. À travers ce blog, je partage mes inspirations, mes découvertes, et mes astuces pour vivre une vie épanouie et stylée. Que vous soyez à la recherche de conseils pratiques, de tendances actuelles ou simplement d’une dose de motivation, vous êtes au bon endroit. Rejoignez-moi dans cette aventure, où chaque jour est une nouvelle occasion de célébrer la vie et d'embrasser sa plus belle version.
           </p>
       </div>
 

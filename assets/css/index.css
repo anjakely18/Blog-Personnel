@@ -165,14 +165,14 @@
     flex-direction: column;
   }
 
-  .articles {
+  .list-articles {
     padding: 0;
     gap: 3rem;
   }
 }
 
 @media (max-width: 670px) {
-  .articles {
+  .list-articles {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
